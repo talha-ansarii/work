@@ -1,0 +1,257 @@
+/* Services container */
+.ServicePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    /* background-image: url('servicess.jpeg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Responsive settings for different screen widths */
+@media (max-width: 768px) {
+    .ServicePage {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+.services-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    
+    /* Responsive settings for different screen widths */
+    @media (max-width: 768px) {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px;
+    }
+}
+
+/* Service item */
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #f9f9f9;
+    
+    /* Responsive settings for different screen widths */
+    @media (max-width: 768px) {
+        flex-direction: column; /* Stack the items on smaller screens */
+        margin: 20px 0; /* Reduce margin on smaller screens */
+    }
+}
+
+/* Image on the left, text on the right */
+.service-item.left {
+    flex-direction: row;
+}
+
+/* Image on the right, text on the left */
+.service-item.right {
+    flex-direction: row-reverse;
+}
+
+/* Service image */
+.service-image img {
+    /* width: 50%; Adjust as needed */
+    height: 40vh;
+    border-radius: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Responsive settings for different screen widths */
+    @media (max-width: 768px) {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Service text */
+.service-text {
+    width: 50%; /* Adjust as needed */
+    padding: 20px; /* Padding around the text */
+
+    /* Responsive settings for different screen widths */
+    @media (max-width: 768px) {
+        width: 100%; /* Full width on smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+/* Service title */
+.service-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+    /* Responsive settings for different screen widths */
+    @media (max-width: 768px) {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Dim glowing effect on hover */
+.service-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02); /* Slightly increase size on hover */
+}
+
+/* Image hover effect */
+.service-image img:hover {
+    transform: scale(1.05); /* Slightly increase image size on hover */
+    filter: brightness(1.1); /* Slightly increase brightness on hover */
+}
+
+/* List container */
+.list {
+    width: 60%; /* Adjust as needed */
+    margin: 40px auto; /* Center the container and add space above */
+    padding: 20px; /* Padding around the container */
+    background: linear-gradient(to bottom right, #f5f7fa, #dbe4ea); /* Gradient background */
+    border: 2px solid #1f2933; /* Darker border for contrast */
+    border-radius: 15px; /* Increased border radius for rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+    font-family: 'Roboto', sans-serif; /* Font style */
+    color: #34495e; /* Dark text color for contrast */
+}
+
+.list:hover {
+    transform: translateY(-5px); /* Lift the list on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+
+/* Responsive settings for different screen widths */
+@media (max-width: 768px) {
+    .list {
+        width: 90%; /* Full width on smaller screens */
+        padding: 10px; /* Reduce padding on smaller screens */
+
+    }
+    .service-item.left{
+        flex-direction: column;
+    }
+    .service-item.right{
+        flex-direction: column;
+    }
+
+}
+
+/* Heading styling */
+.list h3 {
+    font-size: 2rem;
+    color: #2c3e50; /* Orange color */
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+
+    /* Responsive settings for different screen widths */
+    @media (max-width: 768px) {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    /* Add a subtle text shadow for depth */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Add a hover effect for the heading */
+.list h3:hover {
+    color: #0d47a1; /* Darken the color on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+/* Page title styling */
+.page-title {
+    font-size: 3rem; /* Large font size */
+    color: #0d47a1; /* Dark text color */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+
+    /* Responsive settings for different screen widths */
+    @media (max-width: 768px) {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Add 3D underline effect using a pseudo-element */
+.page-title::after {
+    content: '';
+    display: block; /* Display as a block element */
+    width: 50%;
+    height: 4px;
+    background-color: #1f2428; /* Dark color */
+    position: absolute;
+    bottom: 0;
+    left: 25%; /* Center the underline */
+    transform: skew(-15deg);
+    /* box-shadow: 3px 3px 5px hsl(45, 81%, 77%); */
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect to the underline */
+.page-title:hover::after {
+    transform: skew(-15deg) translateY(-3px); /* Shift the underline for 3D effect */
+}
+/* Define the background image for each service */
+.service-item1 .service-image {
+    background-image: url('./weddingplan.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item2 .service-image {
+    background-image: url('./catering.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item3 .service-image {
+    background-image: url('./photography.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item4 .service-image {
+    background-image: url('./styling.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item5 .service-image {
+    background-image: url('./decor.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item6 .service-image {
+    background-image: url('./dj.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item7 .service-image {
+    background-image: url('./hospitality.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.service-item8 .service_image {
+    background-image: url('./corporate.jpeg');
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,38 @@
+
+[
+  {
+    "name": "Wedding Planner",
+    "detail": "Our experienced wedding planners work closely with you to bring your dream wedding to life. ",
+    "image": "./catering.jpeg"
+  },
+  {
+    "name": "Decoration",
+    "detail": "We offer a wide range of decoration options to transform your venue as per your style and theme.",
+    "image": "./corporate.jpeg"
+  },
+  {
+    "name": "Entertainment",
+    "detail": "Our entertainment team keeps the energy high at your event!",
+    "image": "./dj.jpeg"
+  },
+  {
+    "name": "Hospitality",
+    "detail": "We ensure that your guests feel welcomed and comfortable throughout the event.",
+    "image": "./hospitality.jpeg"
+  },
+  {
+    "name": "Corperate Events",
+    "detail": "We offer tailored event planning and management services to ensure that your corporate event is professional, engaging, and successful!    ",
+    "image": "./corporate.jpeg"
+  },
+  {
+    "name": "Catering",
+    "detail": "We provide a variety of beautiful culinary delights to best suit your taste and event theme.",
+    "image": "./catering.jpeg"
+  },
+  {
+    "name": "Photography and Videography",
+    "detail": "We realize the value of your priceless moments and so do our team of professional photographers and videographers.",
+    "image": "./photography.jpeg"
+  }
+]

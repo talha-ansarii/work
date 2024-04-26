@@ -1,0 +1,71 @@
+.h-wrapper {
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  height : 70px;
+}
+.h-container {
+  padding-top: 0;
+  padding-bottom: 0;
+  color: var(--secondary);
+  justify-content: space-between;
+}
+.h-menu {
+  gap: 2rem;
+  color: hsl(0, 0%, 0%);
+}
+.h-menu > *:hover {
+  cursor: pointer;
+}
+.menu-icon {
+  display: none;
+}
+
+.contact-link{
+  background-color: var(--black);
+  padding: 6px 10px 6px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .h-menu {
+    color: var(--black);
+    position: absolute;
+    gap: 2rem;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-weight: 500;
+    flex-direction: column;
+    right: 4rem;
+    top: 3rem;
+    background: #000000;
+    display: flex;
+    border-radius: 10px;
+    transition: all 200ms ease;
+    align-items: flex-start;
+    padding: 2rem;
+    box-shadow: 0px 4px 4px rgba(219, 204, 204, 0.05);
+  }
+}
+@media (max-width: 800px) {
+.nonee{
+  display: none;
+}
+}
+
+.logoLink {
+  display: block; /* Ensures the link behaves as a block element */
+}
+
+.logoImage {
+  width: 100%; /* Ensure the image spans the entire width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 70px; /* Set a maximum width for the image */
+}

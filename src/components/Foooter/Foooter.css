@@ -1,0 +1,101 @@
+/* General styles for the footer container */
+.f-container {
+    justify-content: space-between;
+    border-top: .5px solid rgba(0, 0, 0, 0.148);
+    background-color: hsl(45, 81%, 77%);
+    ;   /* Light yellowish color */
+}
+
+/* Styles for the left side of the footer */
+.f-left {
+    gap: 1rem;
+    /* Customize text color and font size */
+    color: #fff; /* Change text color */
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Styles for the menu section */
+.f-menu {
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 500;
+    /* Customize text color and font size */
+    color: #fff9f9; /* Change text color */
+    font-size: 16px; /* Adjust font size */
+    /* Add padding around menu items */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Styles for the right side of the footer */
+.f-right {
+    /* Customize text color and font size */
+    color: #fff; /* Change text color */
+    font-size: 16px; /* Adjust font size */
+    /* Add padding for spacing */
+    padding: 10px;
+}
+
+/* Add hover effects for menu items */
+.f-menu span:hover {
+    color: #ffffff; /* Change color on hover */
+    text-decoration: underline; /* Underline text on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .f-container {
+        justify-content: center;
+    }
+    .f-container > div {
+        align-items: center !important;
+        text-align: center;
+    }
+    .f-right {
+        justify-content: center;
+    }
+}
+
+/* Customize text colors for different parts of the footer */
+.f-left,
+.f-right {
+    color: #ffffff; /* Change text color */
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Menu item hover effects */
+.f-menu span:hover {
+    color: #fbfbfb; /* Change color on hover */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Padding and border styles */
+.f-menu span,
+.f-right span {
+    padding: 5px 10px; /* Add padding around text */
+    border-radius: 4px; /* Add border-radius */
+}
+
+/* Menu item hover effects */
+.f-menu span:hover {
+    color: #edd69f; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+.secondaryText1{
+    color: #000000;
+}
+.secondaryText2{
+    color: #000000;
+}
+
+/* Additional styles for icons */
+.f-right span, .f-menu p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add gap between icon and text */
+}
+
+.f-right span svg, .f-menu p svg {
+    margin-right: 10px; /* Add margin between icon and text */
+    font-size: 1.5rem; /* Adjust icon size */
+}

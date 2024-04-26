@@ -1,0 +1,201 @@
+/* About Us Page Styles */
+.about-us {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+    text-align: center;
+    background-image: url('aboutuss.jpeg'); /* Add the background image */
+    background-size: cover; /* Cover the entire page with the image */
+    background-attachment: fixed; /* Make the background fixed */
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+} 
+
+/* About Section Styles */
+.about-section {
+    margin-bottom: 40px;
+    
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1f3e72;
+    border-bottom: 2px solid #1f3e72; /* Adds underline */
+    display: inline-block;
+    padding-bottom: 5px;
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+}
+
+/* Container and Content Styles */
+.container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    transition: background-color 0.3s ease-in-out;
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        padding: 20px;
+        margin: 10px;
+        height: auto; /* Adjust height on smaller screens */
+    }
+}
+
+.container:hover {
+    background-color: #e0e0e0;
+}
+
+.our-story-content,
+.our-mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Ensure content takes full height */
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .our-mission-content{
+        flex-direction: column-reverse; /* Stack content vertically on smaller screens */
+    }
+}
+
+.our-story-text,
+.our-mission-text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1rem; /* Smaller font size */
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
+}
+
+.our-story-image,
+.our-mission-image {
+    max-width: 45%;
+    border-radius: 10px;
+    border: 1px solid #d3d3d3;
+    transition: transform 0.3s ease-in-out;
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        max-width: 100%; /* Allow the image to take up full width on smaller screens */
+    }
+}
+
+.our-story-image:hover,
+.our-mission-image:hover {
+    transform: scale(1.05);
+}
+
+.our-story-text h2,
+.our-mission-text h2 {
+    font-size: 2rem;
+    color: #1f3e72;
+    margin-bottom: 10px;
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+/* Testimonials section styling */
+.testimonials-section {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #1f3e72;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+/* Styling for the testimonial heading */
+.testimonials-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #1f3e72;
+    border-bottom: 2px solid #1f3e72; /* Adds underline */
+    padding-bottom: 5px;
+    display: inline-block;
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+/* Container for testimonials */
+.testimonials-container {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+/* Styling for the testimonial */
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        padding: 10px;
+        max-width: 100%; /* Allow testimonial to take up full width on smaller screens */
+    }
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+    /* Responsive settings */
+    @media (max-width: 768px) {
+        width: 50px; /* Reduce image size on smaller screens */
+        height: 50px;
+    }
+}
+
+.testimonial:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}

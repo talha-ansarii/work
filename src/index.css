@@ -79,8 +79,9 @@ a {
 .secondaryText {
   font-family: "Manrope", sans-serif;
   color: rgba(168, 158, 137, 1)  ;
-
-  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 14px;
 }
 .orangeText {
   color: orange;

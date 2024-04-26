@@ -1,0 +1,32 @@
+.ring-svg{
+    cursor: pointer;
+}
+.active{
+    color: #474747;
+}
+
+.p-container{
+    margin-top: -15px;
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+
+.p-title{
+  font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 29.25px    ;
+    line-height: 39.96px    ;
+    color: #EDD3A4    ;
+}
+
+.p-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.p-wrapper>:last-child p{
+    margin-top: 80px;
+}
+

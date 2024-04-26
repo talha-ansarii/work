@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section className="hero-wrapper">
-    <img className="bg-img" src="/hero.jpeg" />
+    <img className="hero-img" src="/hero.jpeg" />
     <div className="overlay"></div>
       <div className="paddings innerWidth hero-container">
 

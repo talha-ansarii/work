@@ -1,3 +1,22 @@
+.v-title{
+  font-family: "Manrope", sans-serif;
+font-size: 36px;
+font-weight: 600;
+line-height: 54px;
+text-align: center;
+color: #EDD3A4;
+
+
+}
+
+.v-wrapper{
+  background-color: #171717;
+  padding: 6px;
+}
+
+
+
+
 .v-container .image-container {
   border: 8px solid rgb(232 232 232 / 93%);
 }

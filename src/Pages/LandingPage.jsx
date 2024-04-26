@@ -5,16 +5,18 @@ import Companies from "../components/Companies/Companies";
 import Value from "../components/Value/Value";
 import Contact from "../components/Contact/Contact";
 import GetStarted from "../components/GetStarted/GetStarted";
+import Numbers from "../components/Numbers/Numbers";
 
 
 function LandingPage() {
   return (
     <div>
       <Hero />
-      <Companies />
+      <Numbers />
+      {/* <Companies /> */}
       <Residencies />
       <Value />
-      <Contact />
+      {/* <Contact /> */}
       <GetStarted />
       {/* <Testimonials /> */}
     </div>

@@ -6,6 +6,7 @@ import "swiper/css";
 import "./Residencies.css";
 import { sliderSettings } from "../../utils/common";
 import Companies from "../Companies/Companies";
+import { HashLink } from 'react-router-hash-link';
 
 const Residencies = () => {
   return (
@@ -19,7 +20,8 @@ const Residencies = () => {
 
           <div className="cards">
           {data.map((card, i) => (
-              <div key={i} className=" r-card">
+            <HashLink smooth key={i} to={`/Pages/ServicesPages/ServicePage#service${card.id}`}>
+              <div  className=" r-card">
                 <img src={card.image} alt="home" />
                 <span className="secondaryText r-price">
                   <span style={{ color: "orange" }}></span>
@@ -28,6 +30,8 @@ const Residencies = () => {
                 <span className="nameText">{card.name}</span>
                 <span className="secondaryText detailsText">{card.detail}</span>
               </div>
+
+            </HashLink>
           ))}
 
           </div>

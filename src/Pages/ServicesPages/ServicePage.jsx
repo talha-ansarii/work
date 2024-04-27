@@ -12,45 +12,56 @@ import hospitality_image from '../ServicesPages/hospitality.jpeg'
 function ServicePage() {
   const services = [
     {
+      id : 1,
       image: <img src={photography_image} alt="Wedding Planner" />,
       title: "Wedding Planner", 
       text: "Our experienced wedding planners work closely with you to bring your dream wedding to life. You can rely on us for handling every detail with care and expertise.",
     },
-    {
+    { id : 2,
       image: <img src={catering_image} alt="Catering" />,
       title: "Catering",
       text: "We provide a variety of beautiful culinary delights to best suit your taste and event theme.",
     },
     {
+      id : 3,
       image: <img src={photography_image} alt="Photography/Videography" />,
       title: "Photography/Videography",
       text: "We realize the value of your priceless moments and so do our team of professional photographers and videographers. Our team vows to capture every moment of your event so you can have memories to cherish.",
     },
     {
-      image: <img src={styling_image} alt="Styling and Grooming" />,
-      title: "Styling and Grooming",
-      text: "Our team of expert stylists and makeup artists make sure that you look your best at your event. From highlighting your features to a full on bridal look we do it all!",
-    },
-    {
+      id : 4,
       image: <img src={decor_image} alt="Decoration" />,
       title: "Decoration",
       text: "We offer a wide range of decoration options to transform your venue as per your style and theme.",
     },
     {
+      id : 5,
       image: <img src={dj_image} alt="DJ and Entertainment" />,
       title: "DJ and Entertainment",
       text: "Our entertainment team keeps the energy high at your event! We keep the party going with music, performances, and interactive experiences tailored as per your taste!",
     },
     {
+      id : 6,
       image: <img src={hospitality_image} alt="Hospitality and Guest Support" />,
       title: "Hospitality and Guest Support",
       text: "We ensure that your guests feel welcomed and comfortable throughout the event. We are with you every step of the way providing support and assistance.",
     },
     {
+      id : 7,
       image: <img src={corporate_image} alt="Corporate Events" />,
       title: "Corporate Events",
       text: "We offer tailored event planning and management services to ensure that your corporate event is professional, engaging, and successful!",
     },
+    {
+      
+      image: <img src={styling_image} alt="Styling and Grooming" />,
+      title: "Styling and Grooming",
+      text: "Our team of expert stylists and makeup artists make sure that you look your best at your event. From highlighting your features to a full on bridal look we do it all!",
+    },
+    
+    
+    
+    
   ];
 
   return (
@@ -60,6 +71,7 @@ function ServicePage() {
         <div className="services-container">
           {services.map((service, index) => (
             <div
+              id={`service${service.id}`}
               className={`service-item ${index % 2 === 0 ? "left" : "right"}`}
               key={index}
             >

@@ -1,9 +1,18 @@
 /* General styles for the footer container */
+.f-wrapper{
+    background: #171717;
+   
+
+}
 .f-container {
     justify-content: space-between;
-    border-top: .5px solid rgba(0, 0, 0, 0.148);
-    background-color: hsl(45, 81%, 77%);
+    width: 100%;
+    
     ;   /* Light yellowish color */
+}
+
+.f-title{
+    color: #EDD3A4
 }
 
 /* Styles for the left side of the footer */
@@ -12,6 +21,7 @@
     /* Customize text color and font size */
     color: #fff; /* Change text color */
     font-size: 14px; /* Adjust font size */
+    
 }
 
 /* Styles for the menu section */
@@ -25,6 +35,7 @@
     /* Add padding around menu items */
     padding: 10px 20px;
     border-radius: 5px;
+    text-align: right;
 }
 
 /* Styles for the right side of the footer */
@@ -34,6 +45,7 @@
     font-size: 16px; /* Adjust font size */
     /* Add padding for spacing */
     padding: 10px;
+    text-align: right;
 }
 
 /* Add hover effects for menu items */
@@ -82,10 +94,10 @@
     text-decoration: underline; /* Add underline on hover */
 }
 .secondaryText1{
-    color: #000000;
+    color: #474747;
 }
 .secondaryText2{
-    color: #000000;
+    color: #474747;
 }
 
 /* Additional styles for icons */

@@ -8,14 +8,14 @@ const Numbers = () => {
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={1450} end={1500} duration={4} /> <span>+</span>
+                <CountUp start={1300} end={1500} duration={5} /> <span>+</span>
               </span>
               <span className="belowText">Events Organised</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={2150} end={2200} duration={4} /> <span>+</span>
+                <CountUp start={2000} end={2200} duration={5} /> <span>+</span>
               </span>
               <span className="belowText">Happy Customer</span>
             </div>

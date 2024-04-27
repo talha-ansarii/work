@@ -1,4 +1,9 @@
+
+.c-wrapper{
+    position: relative;
+}
 .c-container{
+    position: relative;
     justify-content: space-around;
     gap: 1rem;
 }
@@ -6,4 +11,11 @@
     height: 100px;
     width: 100px;
     filter: grayscale(100%);
+}
+
+.img:hover{
+    scale: 1.25;
+    filter: grayscale(0%);
+    transition: all;
+    transition-duration: 0.5s;
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 import "./Foooter.css";
 
 const Footer = () => {
   return (
     <div className="f-wrapper">
-      <div className="paddings innerWidth flexCenter f-container">
+      <div className="paddings  flexCenter f-container">
         {/* Left side */}
         <div className="flexColStart f-left">
           <img src="./logo2.png" alt="" width={120} />
@@ -16,10 +16,13 @@ const Footer = () => {
         </div>
 
         {/* Right side */}
-        <div className="flexColStart f-right">
-          <span className="primaryText">Craft My Event</span>
+        <div className="flexColEnd f-right">
+          <span className="primaryText f-title">Craft My Event</span>
           <span className="secondaryText2">
-            Seven Seas Hotel,<br/>12, M2K Rd, Mangalam Place,<br/> Sector 3, Rohini, New Delhi, Delhi, 110085
+            Seven Seas Hotel,
+            <br />
+            12, M2K Rd, Mangalam Place,
+            <br /> Sector 3, Rohini, New Delhi, Delhi, 110085
           </span>
           <div className="flexCenter f-menu">
             <div className="phone-number secondaryText1">

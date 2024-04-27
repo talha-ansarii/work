@@ -32,10 +32,13 @@ const Residencies = () => {
 
           </div>
       </div>
+      <div>
+
       <div className="flexColCenter r-head">
           <span className="">Our Clients</span>
         </div>
       <Companies/>
+      </div>
     </div>
   );
 };

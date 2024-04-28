@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import "../ServicesPages/ServicePage.css"
 import catering_image from '../ServicesPages/catering.jpeg'
@@ -8,6 +8,7 @@ import styling_image from '../ServicesPages/styling.jpeg'
 import dj_image from '../ServicesPages/dj.jpeg'
 import photography_image from '../ServicesPages/photography.jpeg'
 import hospitality_image from '../ServicesPages/hospitality.jpeg'
+import { useLocation } from "react-router-dom";
 
 function ServicePage() {
   const services = [
@@ -58,14 +59,17 @@ function ServicePage() {
       title: "Styling and Grooming",
       text: "Our team of expert stylists and makeup artists make sure that you look your best at your event. From highlighting your features to a full on bridal look we do it all!",
     },
-    
-    
+
     
     
   ];
+  const { pathname } = useLocation();
 
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
-    <Container>
       <div className="ServicePage">
         <h1 className="page-title">Our Services</h1>
         <div className="services-container">
@@ -90,7 +94,6 @@ function ServicePage() {
           </div>
         </div>
       </div>
-    </Container>
   );
 }
 

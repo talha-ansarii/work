@@ -10,7 +10,7 @@ import logoo from '../../../public/logoo.png'
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerColor = useHeaderColor();
-  console.log(menuOpened);
+  // console.log(menuOpened);
 
 
   return (

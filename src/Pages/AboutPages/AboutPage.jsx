@@ -3,11 +3,19 @@ import './AboutPage.css';
 // import corporate_image from "../AboutPages/corporate.jpeg"
 import corporate_image from "../AboutPages/corporate.jpeg"
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'; // Import FontAwesome icons
+import { useLocation } from 'react-router-dom';
 
 function AboutUs() {
     // State for the current testimonial index
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
-    
+    const { pathname } = useLocation();
+
+    // Automatically scrolls to top whenever pathname changes
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
+
     // List of testimonials with images
     const testimonials = [
         {
@@ -63,6 +71,7 @@ function AboutUs() {
 
     return (
         <div className="about-us">
+        <div className='avout-overlay'></div>
             <section className="about-section">
                 <h1>About Us</h1>
             </section>

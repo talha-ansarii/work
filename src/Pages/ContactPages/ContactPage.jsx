@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import './ContactPage.css';
+import { useLocation } from 'react-router-dom';
 
 const ContactPage = () => {
+
+    const { pathname } = useLocation();
+
+    // Automatically scrolls to top whenever pathname changes
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
     const [name, setName] = useState("");
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -66,6 +75,7 @@ const ContactPage = () => {
     return (
         <div className="contact-page">
             {/* Hero section with background image and overlay */}
+            <div className='contact-overlay'></div>
             <div className="hero-section">
                 <div className="hero-overlay">
                     <h1>Contact Us</h1>
@@ -141,7 +151,9 @@ const ContactPage = () => {
                                 rel="noopener noreferrer"
                                 className="social-media-button instagram-button"
                             >
-                                <FaInstagram />
+                                <FaInstagram style={{
+                                    color: "white"
+                                }}  />
                             </a>
                             <a
                                 href="https://www.facebook.com"
@@ -149,7 +161,9 @@ const ContactPage = () => {
                                 rel="noopener noreferrer"
                                 className="social-media-button facebook-button"
                             >
-                                <FaFacebookF />
+                                <FaFacebookF style={{
+                                    color: "white"
+                                }}  />
                             </a>
                             <a
                                 href="https://www.youtube.com"
@@ -157,7 +171,9 @@ const ContactPage = () => {
                                 rel="noopener noreferrer"
                                 className="social-media-button youtube-button"
                             >
-                                <FaYoutube />
+                                <FaYoutube style={{
+                                    color: "white"
+                                }}  />
                             </a>
                             <a
                                 href="https://twitter.com"
@@ -165,7 +181,9 @@ const ContactPage = () => {
                                 rel="noopener noreferrer"
                                 className="social-media-button twitter-button"
                             >
-                                <FaTwitter />
+                                <FaTwitter style={{
+                                    color: "white"
+                                }}  />
                             </a>
                             <a
                                 href="https://www.whatsapp.com"
@@ -173,7 +191,9 @@ const ContactPage = () => {
                                 rel="noopener noreferrer"
                                 className="social-media-button whatsapp-button"
                             >
-                                <FaWhatsapp />
+                                <FaWhatsapp style={{
+                                    color: "white"
+                                }} />
                             </a>
                         </div>
                     </Col>

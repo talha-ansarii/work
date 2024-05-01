@@ -4,7 +4,7 @@ import "./Foooter.css";
 
 const Footer = () => {
   return (
-    <div className="f-wrapper">
+    <div className="f-wrapper ">
       <div className="paddings  flexCenter f-container">
         {/* Left side */}
         <div className="flexColStart f-left">

@@ -7,6 +7,7 @@ import ServicePage from './Pages/ServicesPages/ServicePage';
 import ContactPage from './Pages/ContactPages/ContactPage';
 import AboutPage from './Pages/AboutPages/AboutPage';
 import LandingPage from './Pages/LandingPage';
+import TestPage from './Pages/TestPage/TestPage';
 
 
 function RoutingPage() {
@@ -20,6 +21,7 @@ function RoutingPage() {
               <Route path='Pages/ServicesPages/ServicePage' element={<ServicePage/>} />
               <Route path='Pages/ContactPages/ContactPage' element={<ContactPage/>} />
               <Route path='Pages/AboutPages/AboutPage' element={<AboutPage/>} />
+              <Route path='test' element={<TestPage/>} />
               </Route>
           </Routes>
       </Router>
